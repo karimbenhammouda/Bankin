@@ -12,5 +12,5 @@ class WebServiceClient {
 }
 
 extension WebServiceClient {
-    
+
 }
