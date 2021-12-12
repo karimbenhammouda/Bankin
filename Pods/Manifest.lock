@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.4)
+  - SAMKeychain (1.5.3)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SAMKeychain
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SAMKeychain
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: 14af1945568871a10cf831e3c21e2ca6f8f2ffaa
+
+COCOAPODS: 1.11.2

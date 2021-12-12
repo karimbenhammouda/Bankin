@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E0F2EA5B0417C0F564FC81 /* Pods_Bankin_BankinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4CEA2A03330DD1A154B820 /* Pods_Bankin_BankinUITests.framework */; };
+		33247A691C91C7D012D064F0 /* Pods_Bankin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE71B4AF38AD0EC7CF136E67 /* Pods_Bankin.framework */; };
+		3F052E732761646B004730D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E722761646B004730D8 /* AppDelegate.swift */; };
+		3F052E752761646B004730D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E742761646B004730D8 /* SceneDelegate.swift */; };
+		3F052E772761646B004730D8 /* BanksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E762761646B004730D8 /* BanksListViewController.swift */; };
+		3F052E7A2761646B004730D8 /* BanksList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F052E782761646B004730D8 /* BanksList.storyboard */; };
+		3F052E7D2761646B004730D8 /* Bankin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E7B2761646B004730D8 /* Bankin.xcdatamodeld */; };
+		3F052E7F27616470004730D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F052E7E27616470004730D8 /* Assets.xcassets */; };
+		3F052E8227616470004730D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F052E8027616470004730D8 /* LaunchScreen.storyboard */; };
+		3F052E8D27616471004730D8 /* BankinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E8C27616471004730D8 /* BankinTests.swift */; };
+		3F052E9727616471004730D8 /* BankinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E9627616471004730D8 /* BankinUITests.swift */; };
+		3F052E9927616471004730D8 /* BankinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052E9827616471004730D8 /* BankinUITestsLaunchTests.swift */; };
+		59043A537F9B9D9C73A96E67 /* Pods_BankinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88BF89E0F0C2B0372B69F71 /* Pods_BankinTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F052E8927616470004730D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F052E672761646B004730D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F052E6E2761646B004730D8;
+			remoteInfo = Bankin;
+		};
+		3F052E9327616471004730D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F052E672761646B004730D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F052E6E2761646B004730D8;
+			remoteInfo = Bankin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CC1EEF8B48738BD574E7DE /* Pods-Bankin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin.debug.xcconfig"; path = "Target Support Files/Pods-Bankin/Pods-Bankin.debug.xcconfig"; sourceTree = "<group>"; };
+		3F052E6F2761646B004730D8 /* Bankin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F052E722761646B004730D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F052E742761646B004730D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F052E762761646B004730D8 /* BanksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewController.swift; sourceTree = "<group>"; };
+		3F052E792761646B004730D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BanksList.storyboard; sourceTree = "<group>"; };
+		3F052E7C2761646B004730D8 /* Bankin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bankin.xcdatamodel; sourceTree = "<group>"; };
+		3F052E7E27616470004730D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F052E8127616470004730D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F052E8327616470004730D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F052E8827616470004730D8 /* BankinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F052E8C27616471004730D8 /* BankinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankinTests.swift; sourceTree = "<group>"; };
+		3F052E9227616471004730D8 /* BankinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F052E9627616471004730D8 /* BankinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankinUITests.swift; sourceTree = "<group>"; };
+		3F052E9827616471004730D8 /* BankinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54EAD254B6B1C2EF7B65BDAA /* Pods-Bankin-BankinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.release.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79516A5BE73762F633A4BF89 /* Pods-Bankin-BankinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		842F452528B783BFEAA88560 /* Pods-Bankin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin.release.xcconfig"; path = "Target Support Files/Pods-Bankin/Pods-Bankin.release.xcconfig"; sourceTree = "<group>"; };
+		86307C8CFDD225D286DA45A7 /* Pods-BankinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankinTests.release.xcconfig"; path = "Target Support Files/Pods-BankinTests/Pods-BankinTests.release.xcconfig"; sourceTree = "<group>"; };
+		C49BF206B836DB894156D824 /* Pods-BankinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankinTests.debug.xcconfig"; path = "Target Support Files/Pods-BankinTests/Pods-BankinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C88BF89E0F0C2B0372B69F71 /* Pods_BankinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE71B4AF38AD0EC7CF136E67 /* Pods_Bankin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4CEA2A03330DD1A154B820 /* Pods_Bankin_BankinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin_BankinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F052E6C2761646B004730D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33247A691C91C7D012D064F0 /* Pods_Bankin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E8527616470004730D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59043A537F9B9D9C73A96E67 /* Pods_BankinTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E8F27616471004730D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E0F2EA5B0417C0F564FC81 /* Pods_Bankin_BankinUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D86CAB22F5C68EC394879B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08CC1EEF8B48738BD574E7DE /* Pods-Bankin.debug.xcconfig */,
+				842F452528B783BFEAA88560 /* Pods-Bankin.release.xcconfig */,
+				79516A5BE73762F633A4BF89 /* Pods-Bankin-BankinUITests.debug.xcconfig */,
+				54EAD254B6B1C2EF7B65BDAA /* Pods-Bankin-BankinUITests.release.xcconfig */,
+				C49BF206B836DB894156D824 /* Pods-BankinTests.debug.xcconfig */,
+				86307C8CFDD225D286DA45A7 /* Pods-BankinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F052E662761646B004730D8 = {
+			isa = PBXGroup;
+			children = (
+				3F052E712761646B004730D8 /* Bankin */,
+				3F052E8B27616470004730D8 /* BankinTests */,
+				3F052E9527616471004730D8 /* BankinUITests */,
+				3F052E702761646B004730D8 /* Products */,
+				2D86CAB22F5C68EC394879B4 /* Pods */,
+				DB2C9FC3FED1655943E495CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F052E702761646B004730D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E6F2761646B004730D8 /* Bankin.app */,
+				3F052E8827616470004730D8 /* BankinTests.xctest */,
+				3F052E9227616471004730D8 /* BankinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F052E712761646B004730D8 /* Bankin */ = {
+			isa = PBXGroup;
+			children = (
+				3F052EAA27620A32004730D8 /* Main */,
+				3F052EA6276205FB004730D8 /* WebService */,
+				3F052EA827620616004730D8 /* Models */,
+				3F052EA5276205DD004730D8 /* Application */,
+				3F052EA72762060A004730D8 /* Resources */,
+				3F052E7B2761646B004730D8 /* Bankin.xcdatamodeld */,
+			);
+			path = Bankin;
+			sourceTree = "<group>";
+		};
+		3F052E8B27616470004730D8 /* BankinTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E8C27616471004730D8 /* BankinTests.swift */,
+			);
+			path = BankinTests;
+			sourceTree = "<group>";
+		};
+		3F052E9527616471004730D8 /* BankinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E9627616471004730D8 /* BankinUITests.swift */,
+				3F052E9827616471004730D8 /* BankinUITestsLaunchTests.swift */,
+			);
+			path = BankinUITests;
+			sourceTree = "<group>";
+		};
+		3F052EA5276205DD004730D8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3F052EA9276209C5004730D8 /* BanksList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3F052EA6276205FB004730D8 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		3F052EA72762060A004730D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E7E27616470004730D8 /* Assets.xcassets */,
+				3F052E8027616470004730D8 /* LaunchScreen.storyboard */,
+				3F052E8327616470004730D8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F052EA827620616004730D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F052EA9276209C5004730D8 /* BanksList */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E782761646B004730D8 /* BanksList.storyboard */,
+				3F052E762761646B004730D8 /* BanksListViewController.swift */,
+			);
+			path = BanksList;
+			sourceTree = "<group>";
+		};
+		3F052EAA27620A32004730D8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3F052E722761646B004730D8 /* AppDelegate.swift */,
+				3F052E742761646B004730D8 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DB2C9FC3FED1655943E495CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE71B4AF38AD0EC7CF136E67 /* Pods_Bankin.framework */,
+				FE4CEA2A03330DD1A154B820 /* Pods_Bankin_BankinUITests.framework */,
+				C88BF89E0F0C2B0372B69F71 /* Pods_BankinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F052E6E2761646B004730D8 /* Bankin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F052E9C27616471004730D8 /* Build configuration list for PBXNativeTarget "Bankin" */;
+			buildPhases = (
+				179F7A88E221984E715C2C9F /* [CP] Check Pods Manifest.lock */,
+				3F052E6B2761646B004730D8 /* Sources */,
+				3F052E6C2761646B004730D8 /* Frameworks */,
+				3F052E6D2761646B004730D8 /* Resources */,
+				C34A526493A3792989A1C128 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bankin;
+			productName = Bankin;
+			productReference = 3F052E6F2761646B004730D8 /* Bankin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F052E8727616470004730D8 /* BankinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F052E9F27616471004730D8 /* Build configuration list for PBXNativeTarget "BankinTests" */;
+			buildPhases = (
+				9D91329E24935E7B25CA6023 /* [CP] Check Pods Manifest.lock */,
+				3F052E8427616470004730D8 /* Sources */,
+				3F052E8527616470004730D8 /* Frameworks */,
+				3F052E8627616470004730D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F052E8A27616470004730D8 /* PBXTargetDependency */,
+			);
+			name = BankinTests;
+			productName = BankinTests;
+			productReference = 3F052E8827616470004730D8 /* BankinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F052E9127616471004730D8 /* BankinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F052EA227616471004730D8 /* Build configuration list for PBXNativeTarget "BankinUITests" */;
+			buildPhases = (
+				FC0E3E0A5EBD09C4E16FB69D /* [CP] Check Pods Manifest.lock */,
+				3F052E8E27616471004730D8 /* Sources */,
+				3F052E8F27616471004730D8 /* Frameworks */,
+				3F052E9027616471004730D8 /* Resources */,
+				7DF0B9DDBF657843438125A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F052E9427616471004730D8 /* PBXTargetDependency */,
+			);
+			name = BankinUITests;
+			productName = BankinUITests;
+			productReference = 3F052E9227616471004730D8 /* BankinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F052E672761646B004730D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3F052E6E2761646B004730D8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3F052E8727616470004730D8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3F052E6E2761646B004730D8;
+					};
+					3F052E9127616471004730D8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3F052E6E2761646B004730D8;
+					};
+				};
+			};
+			buildConfigurationList = 3F052E6A2761646B004730D8 /* Build configuration list for PBXProject "Bankin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F052E662761646B004730D8;
+			productRefGroup = 3F052E702761646B004730D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F052E6E2761646B004730D8 /* Bankin */,
+				3F052E8727616470004730D8 /* BankinTests */,
+				3F052E9127616471004730D8 /* BankinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F052E6D2761646B004730D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F052E8227616470004730D8 /* LaunchScreen.storyboard in Resources */,
+				3F052E7F27616470004730D8 /* Assets.xcassets in Resources */,
+				3F052E7A2761646B004730D8 /* BanksList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E8627616470004730D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E9027616471004730D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		179F7A88E221984E715C2C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF0B9DDBF657843438125A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D91329E24935E7B25CA6023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C34A526493A3792989A1C128 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin/Pods-Bankin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin/Pods-Bankin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bankin/Pods-Bankin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0E3E0A5EBD09C4E16FB69D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankin-BankinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F052E6B2761646B004730D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F052E772761646B004730D8 /* BanksListViewController.swift in Sources */,
+				3F052E732761646B004730D8 /* AppDelegate.swift in Sources */,
+				3F052E7D2761646B004730D8 /* Bankin.xcdatamodeld in Sources */,
+				3F052E752761646B004730D8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E8427616470004730D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F052E8D27616471004730D8 /* BankinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F052E8E27616471004730D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F052E9727616471004730D8 /* BankinUITests.swift in Sources */,
+				3F052E9927616471004730D8 /* BankinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F052E8A27616470004730D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F052E6E2761646B004730D8 /* Bankin */;
+			targetProxy = 3F052E8927616470004730D8 /* PBXContainerItemProxy */;
+		};
+		3F052E9427616471004730D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F052E6E2761646B004730D8 /* Bankin */;
+			targetProxy = 3F052E9327616471004730D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F052E782761646B004730D8 /* BanksList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F052E792761646B004730D8 /* Base */,
+			);
+			name = BanksList.storyboard;
+			sourceTree = "<group>";
+		};
+		3F052E8027616470004730D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F052E8127616470004730D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F052E9A27616471004730D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F052E9B27616471004730D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F052E9D27616471004730D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CC1EEF8B48738BD574E7DE /* Pods-Bankin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bankin/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = BanksList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.Bankin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F052E9E27616471004730D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842F452528B783BFEAA88560 /* Pods-Bankin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bankin/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = BanksList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.Bankin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F052EA027616471004730D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49BF206B836DB894156D824 /* Pods-BankinTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.BankinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bankin.app/Bankin";
+			};
+			name = Debug;
+		};
+		3F052EA127616471004730D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86307C8CFDD225D286DA45A7 /* Pods-BankinTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.BankinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bankin.app/Bankin";
+			};
+			name = Release;
+		};
+		3F052EA327616471004730D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79516A5BE73762F633A4BF89 /* Pods-Bankin-BankinUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.BankinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bankin;
+			};
+			name = Debug;
+		};
+		3F052EA427616471004730D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54EAD254B6B1C2EF7B65BDAA /* Pods-Bankin-BankinUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bankin.fr.BankinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bankin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F052E6A2761646B004730D8 /* Build configuration list for PBXProject "Bankin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F052E9A27616471004730D8 /* Debug */,
+				3F052E9B27616471004730D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F052E9C27616471004730D8 /* Build configuration list for PBXNativeTarget "Bankin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F052E9D27616471004730D8 /* Debug */,
+				3F052E9E27616471004730D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F052E9F27616471004730D8 /* Build configuration list for PBXNativeTarget "BankinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F052EA027616471004730D8 /* Debug */,
+				3F052EA127616471004730D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F052EA227616471004730D8 /* Build configuration list for PBXNativeTarget "BankinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F052EA327616471004730D8 /* Debug */,
+				3F052EA427616471004730D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F052E7B2761646B004730D8 /* Bankin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F052E7C2761646B004730D8 /* Bankin.xcdatamodel */,
+			);
+			currentVersion = 3F052E7C2761646B004730D8 /* Bankin.xcdatamodel */;
+			path = Bankin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F052E672761646B004730D8 /* Project object */;
+}
