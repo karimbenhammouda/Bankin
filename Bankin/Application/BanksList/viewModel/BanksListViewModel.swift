@@ -2,7 +2,7 @@
 //  BanksListViewModel.swift
 //  Bankin
 //
-//  Created by Karim BEN HAMMOUDA on 09/12/2021.
+//  Created by Karim BEN HAMMOUDA on 12/12/2021.
 //
 
 import Foundation
@@ -17,9 +17,9 @@ class BanksListViewModel {
     }
     
     func getData() {
-        webServiceClient.getBanksList() { (banksList)  in
-            DispatchQueue.main.async {
-                print(banksList)
+        webServiceClient.getBanksList() { (finished)  in
+            if finished {
+                // TODO: reload data
             }
         }
     }

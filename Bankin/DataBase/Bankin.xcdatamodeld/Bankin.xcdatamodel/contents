@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G224" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BanksData" representedClassName=".BanksData" syncable="YES">
+        <attribute name="authentication_type" optional="YES" attributeType="String"/>
+        <attribute name="automatic_refresh" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="capabilities" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="country_code" optional="YES" attributeType="String"/>
+        <attribute name="deeplink_android" optional="YES" attributeType="String"/>
+        <attribute name="deeplink_ios" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="logo_url" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parent_name" optional="YES" attributeType="String"/>
+        <attribute name="payment_enabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="primary_color" optional="YES" attributeType="String"/>
+        <attribute name="resource_type" optional="YES" attributeType="String"/>
+        <attribute name="resource_uri" optional="YES" attributeType="String"/>
+        <attribute name="secondary_color" optional="YES" attributeType="String"/>
+        <attribute name="transfer_enabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="form" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BanksFormData" inverseName="banks" inverseEntity="BanksFormData"/>
+        <relationship name="parents" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParentBanksData" inverseName="banks" inverseEntity="ParentBanksData"/>
+    </entity>
+    <entity name="BanksFormData" representedClassName=".BanksFormData" syncable="YES">
+        <attribute name="isNum" optional="YES" attributeType="String"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <attribute name="maxLength" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="banks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BanksData" inverseName="form" inverseEntity="BanksData"/>
+    </entity>
+    <entity name="BanksListData" representedClassName=".BanksListData" syncable="YES">
+        <relationship name="pagination" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BanksListPaginationData" inverseName="paginations" inverseEntity="BanksListPaginationData"/>
+        <relationship name="resources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BanksListResourcesData" inverseName="resources" inverseEntity="BanksListResourcesData"/>
+    </entity>
+    <entity name="BanksListPaginationData" representedClassName=".BanksListPaginationData" syncable="YES">
+        <attribute name="next_uri" optional="YES" attributeType="String"/>
+        <attribute name="previous_uri" optional="YES" attributeType="String"/>
+        <relationship name="paginations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BanksListData" inverseName="pagination" inverseEntity="BanksListData"/>
+    </entity>
+    <entity name="BanksListResourcesData" representedClassName=".BanksListResourcesData" syncable="YES">
+        <attribute name="country_code" optional="YES" attributeType="String"/>
+        <relationship name="parent_banks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ParentBanksData" inverseName="ressources" inverseEntity="ParentBanksData"/>
+        <relationship name="resources" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BanksListData" inverseName="resources" inverseEntity="BanksListData"/>
+    </entity>
+    <entity name="ParentBanksData" representedClassName=".ParentBanksData" syncable="YES">
+        <attribute name="display_order" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_highlighted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="logo_url" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="banks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BanksData" inverseName="parents" inverseEntity="BanksData"/>
+        <relationship name="ressources" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BanksListResourcesData" inverseName="parent_banks" inverseEntity="BanksListResourcesData"/>
+    </entity>
+    <elements>
+        <element name="BanksFormData" positionX="-30375.38568115234" positionY="-12092.51232910156" width="128" height="118"/>
+        <element name="BanksData" positionX="-30210.45629882812" positionY="-12130.33624267578" width="128" height="313"/>
+        <element name="ParentBanksData" positionX="-30200.87487792969" positionY="-12289.55801391602" width="128" height="133"/>
+        <element name="BanksListResourcesData" positionX="-29971.05859375" positionY="-12172.50695800781" width="128" height="88"/>
+        <element name="BanksListPaginationData" positionX="-29965.00408935547" positionY="-12044.75199890137" width="128" height="88"/>
+        <element name="BanksListData" positionX="-29681.90197753906" positionY="-12129.10702514648" width="128" height="73"/>
+    </elements>
+</model>

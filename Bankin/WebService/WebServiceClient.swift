@@ -2,7 +2,7 @@
 //  WebServiceClient.swift
 //  Bankin
 //
-//  Created by Karim BEN HAMMOUDA on 09/12/2021.
+//  Created by Karim BEN HAMMOUDA on 12/12/2021.
 //
 
 import Alamofire
@@ -25,7 +25,7 @@ class WebServiceClient {
 }
 
 extension WebServiceClient {
-    func getBanksList(completion: @escaping (BanksList?) -> Void) {
+    func getBanksList(completion: @escaping (Bool) -> Void) {
         guard let clientSecret = self.keychen.getUserAccountKey() else {
             return
         }
@@ -37,7 +37,8 @@ extension WebServiceClient {
                     if let data = response as? Data {
                         let decoder = JSONDecoder()
                         let banksList = try decoder.decode(BanksList.self, from: data)
-                        completion(banksList)
+                        banksList.saveDataBase()
+                        completion(true)
                     }
                 } catch {
                     print(String.init(format: ApiLog.jsonErrorDeserializing,"\(error.localizedDescription)"))
@@ -45,7 +46,7 @@ extension WebServiceClient {
             }
             else {
                 print(ApiLog.serverError)
-                completion(nil)
+                completion(false)
             }
         })
     }

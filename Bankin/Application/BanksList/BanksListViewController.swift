@@ -9,11 +9,17 @@ import UIKit
 import Alamofire
 
 class BanksListViewController: UIViewController {
-    var viewModel: BanksListViewModel?
+    weak var viewModel: BanksListViewModel?
+    let dataBase = DataBaseManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        getData()
+    }
+
+    func getData() {
+        let banks = dataBase.fetch(BanksListData.self)
     }
 }
 

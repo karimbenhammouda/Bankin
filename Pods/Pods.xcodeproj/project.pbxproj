@@ -184,7 +184,7 @@
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2A613E167CCD9475293C5506CCD27F /* Defaults+StringToBool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Defaults+StringToBool.swift"; path = "Sources/Defaults+StringToBool.swift"; sourceTree = "<group>"; };
 		5F21044598585082E260AB2CDC7BCE0C /* SwiftyUserDefaults-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyUserDefaults-Info.plist"; sourceTree = "<group>"; };
-		612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		663FDA35EE5701EA11B7C39AF37D215B /* SwiftyUserDefaults.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyUserDefaults.debug.xcconfig; sourceTree = "<group>"; };
 		6954660A760D34B6899814519746D193 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		6D8F7AE5EEA449E402971B25E45B624B /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		96049BEAFCBC262F4E8A705DD6461197 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		9A9BEBE7B9EF59DBE6F08E686EC1A277 /* Pods-Bankin-BankinUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bankin-BankinUITests-frameworks.sh"; sourceTree = "<group>"; };
 		9CED69FD5117CE606532044E04AEAEFF /* Pods-Bankin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bankin.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A032CFE84A85E5132B595E5F32EAB99B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		A0A447E2BDC3CEDDED5439DB4D332FDB /* Pods-Bankin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bankin.modulemap"; sourceTree = "<group>"; };
 		A6BE90665B4A1053C5FF26D5289CBC83 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
@@ -337,7 +337,6 @@
 				4D118EBA6E4D68FA741AE643D735BE0C /* PropertyWrappers.swift */,
 				94FB70593AF6796A40A5E68DF6FFFB39 /* Support Files */,
 			);
-			name = SwiftyUserDefaults;
 			path = SwiftyUserDefaults;
 			sourceTree = "<group>";
 		};
@@ -423,7 +422,6 @@
 				DEFB13B7C45EB53D3C6F23869C926598 /* Validation.swift */,
 				4F9692B237920CE5BB104000A4F45EB7 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -451,7 +449,7 @@
 				4FF3709D05CB6279E9D22564B2D04A3B /* Pods-Bankin */,
 				9513F970F7C32B72EAE15EDABFBBAB48 /* Pods-Bankin-BankinUITests */,
 				177B6820099B4B8477DAA0E06FFBF61C /* Pods-BankinTests */,
-				612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */,
+				612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain.framework */,
 				B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults */,
 			);
 			name = Products;
@@ -526,7 +524,6 @@
 				D0F8A2D4CA5F4088F6E7652FC797A204 /* Resources */,
 				74303E86BB6C4BBBA7E0D0FB670F01AD /* Support Files */,
 			);
-			name = SAMKeychain;
 			path = SAMKeychain;
 			sourceTree = "<group>";
 		};
@@ -617,7 +614,7 @@
 			);
 			name = SAMKeychain;
 			productName = SAMKeychain;
-			productReference = 612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */;
+			productReference = 612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A049F3164EBC335A7982A4E1FB3A5EAA /* SwiftyUserDefaults */ = {
@@ -994,7 +991,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SAMKeychain/SAMKeychain-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1135,7 +1132,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SAMKeychain/SAMKeychain-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SAMKeychain/SAMKeychain-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
