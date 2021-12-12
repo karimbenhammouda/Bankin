@@ -11,21 +11,21 @@ struct BanksList: Decodable {
     let resources: [BanksListResources]
     let pagination: BanksListPagination
     
-    
     static let dataBase = DataBaseManager()
-        func saveDataBase() {
-            let dataBaseManager = DataBaseManager()
-            dataBaseManager.deleteAll(BanksListData.self)
-            guard let banksList = dataBaseManager.add(BanksListData.self) else {
-                return
-            }
-            let banksListResourcesData = getBanksListRessouce()
-            for banksResources in banksListResourcesData {
-                banksList.addToResources(banksResources)
-            }
-            banksList.pagination = getBanksListPagination()
-            dataBaseManager.save()
+    
+    func saveDataBase() {
+        let dataBaseManager = DataBaseManager()
+        dataBaseManager.deleteAll(BanksListData.self)
+        guard let banksList = dataBaseManager.add(BanksListData.self) else {
+            return
         }
+        let banksListResourcesData = getBanksListRessouce()
+        for banksResources in banksListResourcesData {
+            banksList.addToResources(banksResources)
+        }
+        banksList.pagination = getBanksListPagination()
+        dataBaseManager.save()
+    }
     
     func getBanksListPagination() -> BanksListPaginationData {
         let banksListPaginationData = BanksListPaginationData(context: BanksList.dataBase.viewContext)

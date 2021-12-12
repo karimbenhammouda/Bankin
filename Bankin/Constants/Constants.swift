@@ -24,4 +24,8 @@ struct Constants {
     struct ApiClientSecret {
         static let clientSecretKey = "client_secret"
     }
+    
+    struct banksList {
+        static let sortDataKey = "FR"
+    }
 }
