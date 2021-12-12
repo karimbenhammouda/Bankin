@@ -25,8 +25,7 @@ class BanksListViewController: UIViewController {
     }
     
     func setupTableView() {
-        let nib = UINib(nibName: "BankCountryView", bundle: nil)
-        tableView.register(nib, forHeaderFooterViewReuseIdentifier: "BankCountryView")
+        tableView.register(UINib(nibName: "BankCountryView", bundle: nil), forHeaderFooterViewReuseIdentifier: "BankCountryView")
         tableView.register(UINib.init(nibName: "BankTableViewCell", bundle: nil), forCellReuseIdentifier: "BankTableViewCell")
     }
 }
@@ -53,10 +52,10 @@ extension BanksListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BankTableViewCell", for: indexPath) as? BankTableViewCell else {
+        guard let viewModel = viewModel, let cell = tableView.dequeueReusableCell(withIdentifier: "BankTableViewCell", for: indexPath) as? BankTableViewCell else {
             return UITableViewCell()
         }
-        cell.viewModel = BanksTableCellViewModel("", "")
+        cell.viewModel = BanksTableCellViewModel(viewModel.getBankIcon(indexPath.section, indexPath.row), viewModel.getBankTitle(indexPath.section, indexPath.row))
         cell.configureCell()
         return cell
     }
@@ -64,10 +63,9 @@ extension BanksListViewController: UITableViewDataSource {
 
 extension BanksListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let viewModel = viewModel else {
+        guard let viewModel = viewModel, let view = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: "BankCountryView")  as? BankCountryView else {
             return UIView()
         }
-        let view = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: "BankCountryView")  as! BankCountryView
         let bankCountryViewModel = BankCountryViewModel(countryBank: viewModel.getBankCountryTitle(section))
         view.viewModel = bankCountryViewModel
         view.configureView()
