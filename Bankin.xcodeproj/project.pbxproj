@@ -46,6 +46,18 @@
 		3F052EE32762605A004730D8 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EE22762605A004730D8 /* APIRoute.swift */; };
 		3F052EE62762A8AA004730D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EE52762A8AA004730D8 /* Constants.swift */; };
 		3F052F0D27637B7A004730D8 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F0C27637B7A004730D8 /* DataBaseManager.swift */; };
+		3F052F2627639F1E004730D8 /* BanksData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2227639F1E004730D8 /* BanksData+CoreDataClass.swift */; };
+		3F052F2727639F1E004730D8 /* BanksData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2327639F1E004730D8 /* BanksData+CoreDataProperties.swift */; };
+		3F052F2827639F1E004730D8 /* BanksFormData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2427639F1E004730D8 /* BanksFormData+CoreDataClass.swift */; };
+		3F052F2927639F1E004730D8 /* BanksFormData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2527639F1E004730D8 /* BanksFormData+CoreDataProperties.swift */; };
+		3F052F322763A3BB004730D8 /* BanksListResourcesData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2A2763A3BB004730D8 /* BanksListResourcesData+CoreDataClass.swift */; };
+		3F052F332763A3BB004730D8 /* BanksListResourcesData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2B2763A3BB004730D8 /* BanksListResourcesData+CoreDataProperties.swift */; };
+		3F052F342763A3BB004730D8 /* BanksListData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2C2763A3BB004730D8 /* BanksListData+CoreDataClass.swift */; };
+		3F052F352763A3BB004730D8 /* BanksListData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2D2763A3BB004730D8 /* BanksListData+CoreDataProperties.swift */; };
+		3F052F362763A3BB004730D8 /* ParentBanksData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2E2763A3BB004730D8 /* ParentBanksData+CoreDataClass.swift */; };
+		3F052F372763A3BB004730D8 /* ParentBanksData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F2F2763A3BB004730D8 /* ParentBanksData+CoreDataProperties.swift */; };
+		3F052F382763A3BB004730D8 /* BanksListPaginationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F302763A3BB004730D8 /* BanksListPaginationData+CoreDataClass.swift */; };
+		3F052F392763A3BB004730D8 /* BanksListPaginationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F312763A3BB004730D8 /* BanksListPaginationData+CoreDataProperties.swift */; };
 		3F052F3D2763CF36004730D8 /* BankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F3B2763CF36004730D8 /* BankTableViewCell.swift */; };
 		3F052F3E2763CF36004730D8 /* BankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F052F3C2763CF36004730D8 /* BankTableViewCell.xib */; };
 		3F052F412763CF85004730D8 /* BanksTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F402763CF85004730D8 /* BanksTableCellViewModel.swift */; };
@@ -53,18 +65,9 @@
 		3F052F462763DBBE004730D8 /* BankCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F452763DBBE004730D8 /* BankCountryView.swift */; };
 		3F052F492763F5ED004730D8 /* BankCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F482763F5EC004730D8 /* BankCountryViewModel.swift */; };
 		3F052F4C27641A0E004730D8 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F4B27641A0E004730D8 /* UIView+Utils.swift */; };
-		3F54E2EB27664EBF002FFEF6 /* BanksFormData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2DF27664EBF002FFEF6 /* BanksFormData+CoreDataClass.swift */; };
-		3F54E2EC27664EBF002FFEF6 /* BanksListData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E027664EBF002FFEF6 /* BanksListData+CoreDataProperties.swift */; };
-		3F54E2ED27664EBF002FFEF6 /* BanksListPaginationData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E127664EBF002FFEF6 /* BanksListPaginationData+CoreDataClass.swift */; };
-		3F54E2EE27664EBF002FFEF6 /* BanksListPaginationData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E227664EBF002FFEF6 /* BanksListPaginationData+CoreDataProperties.swift */; };
-		3F54E2EF27664EBF002FFEF6 /* BanksListResourcesData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E327664EBF002FFEF6 /* BanksListResourcesData+CoreDataClass.swift */; };
-		3F54E2F027664EBF002FFEF6 /* BanksData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E427664EBF002FFEF6 /* BanksData+CoreDataClass.swift */; };
-		3F54E2F127664EBF002FFEF6 /* BanksListData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E527664EBF002FFEF6 /* BanksListData+CoreDataClass.swift */; };
-		3F54E2F227664EBF002FFEF6 /* BanksData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E627664EBF002FFEF6 /* BanksData+CoreDataProperties.swift */; };
-		3F54E2F327664EBF002FFEF6 /* BanksListResourcesData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E727664EBF002FFEF6 /* BanksListResourcesData+CoreDataProperties.swift */; };
-		3F54E2F427664EBF002FFEF6 /* ParentBanksData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E827664EBF002FFEF6 /* ParentBanksData+CoreDataClass.swift */; };
-		3F54E2F527664EBF002FFEF6 /* ParentBanksData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2E927664EBF002FFEF6 /* ParentBanksData+CoreDataProperties.swift */; };
-		3F54E2F627664EBF002FFEF6 /* BanksFormData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E2EA27664EBF002FFEF6 /* BanksFormData+CoreDataProperties.swift */; };
+		3F052F4F2765FF10004730D8 /* BanksListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F4E2765FF10004730D8 /* BanksListViewControllerTest.swift */; };
+		3F052F5327660B59004730D8 /* BanksListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F5227660B59004730D8 /* BanksListViewModelTest.swift */; };
+		3F052F5627660F9D004730D8 /* APIRouteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052F5527660F9D004730D8 /* APIRouteTest.swift */; };
 		59043A537F9B9D9C73A96E67 /* Pods_BankinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88BF89E0F0C2B0372B69F71 /* Pods_BankinTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +131,18 @@
 		3F052EE22762605A004730D8 /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
 		3F052EE52762A8AA004730D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F052F0C27637B7A004730D8 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		3F052F2227639F1E004730D8 /* BanksData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2327639F1E004730D8 /* BanksData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2427639F1E004730D8 /* BanksFormData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksFormData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2527639F1E004730D8 /* BanksFormData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksFormData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2A2763A3BB004730D8 /* BanksListResourcesData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListResourcesData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2B2763A3BB004730D8 /* BanksListResourcesData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListResourcesData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2C2763A3BB004730D8 /* BanksListData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2D2763A3BB004730D8 /* BanksListData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2E2763A3BB004730D8 /* ParentBanksData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParentBanksData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F2F2763A3BB004730D8 /* ParentBanksData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParentBanksData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F302763A3BB004730D8 /* BanksListPaginationData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListPaginationData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3F052F312763A3BB004730D8 /* BanksListPaginationData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BanksListPaginationData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3F052F3B2763CF36004730D8 /* BankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTableViewCell.swift; sourceTree = "<group>"; };
 		3F052F3C2763CF36004730D8 /* BankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankTableViewCell.xib; sourceTree = "<group>"; };
 		3F052F402763CF85004730D8 /* BanksTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksTableCellViewModel.swift; sourceTree = "<group>"; };
@@ -135,18 +150,9 @@
 		3F052F452763DBBE004730D8 /* BankCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCountryView.swift; sourceTree = "<group>"; };
 		3F052F482763F5EC004730D8 /* BankCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCountryViewModel.swift; sourceTree = "<group>"; };
 		3F052F4B27641A0E004730D8 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
-		3F54E2DF27664EBF002FFEF6 /* BanksFormData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksFormData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E027664EBF002FFEF6 /* BanksListData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F54E2E127664EBF002FFEF6 /* BanksListPaginationData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListPaginationData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E227664EBF002FFEF6 /* BanksListPaginationData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListPaginationData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F54E2E327664EBF002FFEF6 /* BanksListResourcesData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListResourcesData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E427664EBF002FFEF6 /* BanksData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E527664EBF002FFEF6 /* BanksListData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E627664EBF002FFEF6 /* BanksData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F54E2E727664EBF002FFEF6 /* BanksListResourcesData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksListResourcesData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F54E2E827664EBF002FFEF6 /* ParentBanksData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ParentBanksData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		3F54E2E927664EBF002FFEF6 /* ParentBanksData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ParentBanksData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F54E2EA27664EBF002FFEF6 /* BanksFormData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BanksFormData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F052F4E2765FF10004730D8 /* BanksListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewControllerTest.swift; sourceTree = "<group>"; };
+		3F052F5227660B59004730D8 /* BanksListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewModelTest.swift; sourceTree = "<group>"; };
+		3F052F5527660F9D004730D8 /* APIRouteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouteTest.swift; sourceTree = "<group>"; };
 		54EAD254B6B1C2EF7B65BDAA /* Pods-Bankin-BankinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.release.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		79516A5BE73762F633A4BF89 /* Pods-Bankin-BankinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		842F452528B783BFEAA88560 /* Pods-Bankin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin.release.xcconfig"; path = "Target Support Files/Pods-Bankin/Pods-Bankin.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,15 +230,15 @@
 			isa = PBXGroup;
 			children = (
 				3F052EAA27620A32004730D8 /* Main */,
+				3F052EAE27621E86004730D8 /* BaseCoordinator */,
+				3F052EBC27622210004730D8 /* Protocols */,
+				3F052F0B27637B4C004730D8 /* DataBase */,
 				3F052EA6276205FB004730D8 /* WebService */,
 				3F052EA827620616004730D8 /* Models */,
-				3F052EAE27621E86004730D8 /* BaseCoordinator */,
 				3F052EA5276205DD004730D8 /* Application */,
 				3F052EB92762215A004730D8 /* Extensions */,
-				3F052EBC27622210004730D8 /* Protocols */,
 				3F052EE42762A84B004730D8 /* Constants */,
 				3F052EA72762060A004730D8 /* Resources */,
-				3F052F0B27637B4C004730D8 /* DataBase */,
 			);
 			path = Bankin;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 		3F052E8B27616470004730D8 /* BankinTests */ = {
 			isa = PBXGroup;
 			children = (
+				3F052F5427660F7E004730D8 /* WebService */,
+				3F052F4D2765FEC3004730D8 /* Application */,
 				3F052ECF2762439C004730D8 /* Models */,
 				3F052E8C27616471004730D8 /* BankinTests.swift */,
 			);
@@ -397,18 +405,18 @@
 		3F052EEA27636B17004730D8 /* CoreDataModels */ = {
 			isa = PBXGroup;
 			children = (
-				3F54E2E427664EBF002FFEF6 /* BanksData+CoreDataClass.swift */,
-				3F54E2E627664EBF002FFEF6 /* BanksData+CoreDataProperties.swift */,
-				3F54E2DF27664EBF002FFEF6 /* BanksFormData+CoreDataClass.swift */,
-				3F54E2EA27664EBF002FFEF6 /* BanksFormData+CoreDataProperties.swift */,
-				3F54E2E527664EBF002FFEF6 /* BanksListData+CoreDataClass.swift */,
-				3F54E2E027664EBF002FFEF6 /* BanksListData+CoreDataProperties.swift */,
-				3F54E2E127664EBF002FFEF6 /* BanksListPaginationData+CoreDataClass.swift */,
-				3F54E2E227664EBF002FFEF6 /* BanksListPaginationData+CoreDataProperties.swift */,
-				3F54E2E327664EBF002FFEF6 /* BanksListResourcesData+CoreDataClass.swift */,
-				3F54E2E727664EBF002FFEF6 /* BanksListResourcesData+CoreDataProperties.swift */,
-				3F54E2E827664EBF002FFEF6 /* ParentBanksData+CoreDataClass.swift */,
-				3F54E2E927664EBF002FFEF6 /* ParentBanksData+CoreDataProperties.swift */,
+				3F052F2A2763A3BB004730D8 /* BanksListResourcesData+CoreDataClass.swift */,
+				3F052F2B2763A3BB004730D8 /* BanksListResourcesData+CoreDataProperties.swift */,
+				3F052F2C2763A3BB004730D8 /* BanksListData+CoreDataClass.swift */,
+				3F052F2D2763A3BB004730D8 /* BanksListData+CoreDataProperties.swift */,
+				3F052F2E2763A3BB004730D8 /* ParentBanksData+CoreDataClass.swift */,
+				3F052F2F2763A3BB004730D8 /* ParentBanksData+CoreDataProperties.swift */,
+				3F052F302763A3BB004730D8 /* BanksListPaginationData+CoreDataClass.swift */,
+				3F052F312763A3BB004730D8 /* BanksListPaginationData+CoreDataProperties.swift */,
+				3F052F2227639F1E004730D8 /* BanksData+CoreDataClass.swift */,
+				3F052F2327639F1E004730D8 /* BanksData+CoreDataProperties.swift */,
+				3F052F2427639F1E004730D8 /* BanksFormData+CoreDataClass.swift */,
+				3F052F2527639F1E004730D8 /* BanksFormData+CoreDataProperties.swift */,
 			);
 			path = CoreDataModels;
 			sourceTree = "<group>";
@@ -456,6 +464,39 @@
 				3F052F482763F5EC004730D8 /* BankCountryViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F052F4D2765FEC3004730D8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3F052F5027660B33004730D8 /* BanksList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3F052F5027660B33004730D8 /* BanksList */ = {
+			isa = PBXGroup;
+			children = (
+				3F052F5127660B40004730D8 /* ViewModel */,
+				3F052F4E2765FF10004730D8 /* BanksListViewControllerTest.swift */,
+			);
+			path = BanksList;
+			sourceTree = "<group>";
+		};
+		3F052F5127660B40004730D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F052F5227660B59004730D8 /* BanksListViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F052F5427660F7E004730D8 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				3F052F5527660F9D004730D8 /* APIRouteTest.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 		DB2C9FC3FED1655943E495CE /* Frameworks */ = {
@@ -710,47 +751,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F052F492763F5ED004730D8 /* BankCountryViewModel.swift in Sources */,
-				3F54E2F027664EBF002FFEF6 /* BanksData+CoreDataClass.swift in Sources */,
-				3F54E2EC27664EBF002FFEF6 /* BanksListData+CoreDataProperties.swift in Sources */,
 				3F052ECA2762361C004730D8 /* ParentBanks.swift in Sources */,
-				3F54E2EE27664EBF002FFEF6 /* BanksListPaginationData+CoreDataProperties.swift in Sources */,
+				3F052F382763A3BB004730D8 /* BanksListPaginationData+CoreDataClass.swift in Sources */,
 				3F052ECE27623840004730D8 /* BanksForm.swift in Sources */,
 				3F052F462763DBBE004730D8 /* BankCountryView.swift in Sources */,
 				3F052EC02762227E004730D8 /* StoryboardInitializable+Utils.swift in Sources */,
+				3F052F2827639F1E004730D8 /* BanksFormData+CoreDataClass.swift in Sources */,
+				3F052F352763A3BB004730D8 /* BanksListData+CoreDataProperties.swift in Sources */,
 				3F052E772761646B004730D8 /* BanksListViewController.swift in Sources */,
-				3F54E2ED27664EBF002FFEF6 /* BanksListPaginationData+CoreDataClass.swift in Sources */,
 				3F052E732761646B004730D8 /* AppDelegate.swift in Sources */,
 				3F052EC4276233AE004730D8 /* BanksList.swift in Sources */,
+				3F052F2727639F1E004730D8 /* BanksData+CoreDataProperties.swift in Sources */,
+				3F052F2927639F1E004730D8 /* BanksFormData+CoreDataProperties.swift in Sources */,
 				3F052EB027621EC9004730D8 /* Coordinator.swift in Sources */,
-				3F54E2F527664EBF002FFEF6 /* ParentBanksData+CoreDataProperties.swift in Sources */,
+				3F052F392763A3BB004730D8 /* BanksListPaginationData+CoreDataProperties.swift in Sources */,
 				3F052F3D2763CF36004730D8 /* BankTableViewCell.swift in Sources */,
-				3F54E2EB27664EBF002FFEF6 /* BanksFormData+CoreDataClass.swift in Sources */,
 				3F052F4C27641A0E004730D8 /* UIView+Utils.swift in Sources */,
 				3F052EAD27621DEE004730D8 /* WebServiceClient.swift in Sources */,
 				3F052EC227622CB9004730D8 /* StringProtocol+Utils.swift in Sources */,
 				3F052F412763CF85004730D8 /* BanksTableCellViewModel.swift in Sources */,
-				3F54E2F327664EBF002FFEF6 /* BanksListResourcesData+CoreDataProperties.swift in Sources */,
-				3F54E2F227664EBF002FFEF6 /* BanksData+CoreDataProperties.swift in Sources */,
 				3F052F0D27637B7A004730D8 /* DataBaseManager.swift in Sources */,
-				3F54E2EF27664EBF002FFEF6 /* BanksListResourcesData+CoreDataClass.swift in Sources */,
 				3F052EDF27625868004730D8 /* WebService.swift in Sources */,
-				3F54E2F127664EBF002FFEF6 /* BanksListData+CoreDataClass.swift in Sources */,
+				3F052F2627639F1E004730D8 /* BanksData+CoreDataClass.swift in Sources */,
+				3F052F342763A3BB004730D8 /* BanksListData+CoreDataClass.swift in Sources */,
 				3F052EC627623499004730D8 /* BanksListPagination.swift in Sources */,
 				3F052ECC2762369E004730D8 /* Banks.swift in Sources */,
 				3F052EE32762605A004730D8 /* APIRoute.swift in Sources */,
 				3F052EBE27622234004730D8 /* StoryboardInitializable.swift in Sources */,
+				3F052F362763A3BB004730D8 /* ParentBanksData+CoreDataClass.swift in Sources */,
 				3F052EE127625892004730D8 /* APILog.swift in Sources */,
 				3F052EC82762359D004730D8 /* BanksListResources.swift in Sources */,
 				3F052EDD27624FAF004730D8 /* KeychainManager.swift in Sources */,
 				3F052EB527621F91004730D8 /* BanksListCoordinator.swift in Sources */,
 				3F052E7D2761646B004730D8 /* Bankin.xcdatamodeld in Sources */,
-				3F54E2F627664EBF002FFEF6 /* BanksFormData+CoreDataProperties.swift in Sources */,
 				3F052E752761646B004730D8 /* SceneDelegate.swift in Sources */,
+				3F052F332763A3BB004730D8 /* BanksListResourcesData+CoreDataProperties.swift in Sources */,
+				3F052F372763A3BB004730D8 /* ParentBanksData+CoreDataProperties.swift in Sources */,
 				3F052EB227621F00004730D8 /* AppCoordinator.swift in Sources */,
 				3F052EBB2762218B004730D8 /* UIStoryboard+Utils.swift in Sources */,
-				3F54E2F427664EBF002FFEF6 /* ParentBanksData+CoreDataClass.swift in Sources */,
 				3F052EB8276220EC004730D8 /* BanksListViewModel.swift in Sources */,
 				3F052EE62762A8AA004730D8 /* Constants.swift in Sources */,
+				3F052F322763A3BB004730D8 /* BanksListResourcesData+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,11 +801,14 @@
 			files = (
 				3F052E8D27616471004730D8 /* BankinTests.swift in Sources */,
 				3F052EDB27624CB2004730D8 /* BanksListTest.swift in Sources */,
+				3F052F4F2765FF10004730D8 /* BanksListViewControllerTest.swift in Sources */,
 				3F052ED5276247DA004730D8 /* ParentBanksTest.swift in Sources */,
 				3F052ED3276243FB004730D8 /* BanksFormTest.swift in Sources */,
 				3F052ED1276243B8004730D8 /* BanksTest.swift in Sources */,
 				3F052ED727624ABA004730D8 /* BanksListResourcesTest.swift in Sources */,
 				3F052ED927624BE2004730D8 /* BanksListPaginationTest.swift in Sources */,
+				3F052F5627660F9D004730D8 /* APIRouteTest.swift in Sources */,
+				3F052F5327660B59004730D8 /* BanksListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

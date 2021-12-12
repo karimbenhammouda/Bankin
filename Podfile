@@ -7,6 +7,7 @@ target 'Bankin' do
 
   # Pods for Bankin
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'SAMKeychain'
   pod 'SwiftyUserDefaults'
 
