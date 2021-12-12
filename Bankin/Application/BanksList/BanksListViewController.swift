@@ -46,13 +46,18 @@ extension BanksListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        guard let viewModel = viewModel else {
+            return 0
+        }
+        return viewModel.getParentBanksCount(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "BankTableViewCell", for: indexPath) as? BankTableViewCell else {
             return UITableViewCell()
         }
+        cell.viewModel = BanksTableCellViewModel("", "")
+        cell.configureCell()
         return cell
     }
 }
@@ -70,6 +75,10 @@ extension BanksListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 35
+        return 35.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
     }
 }

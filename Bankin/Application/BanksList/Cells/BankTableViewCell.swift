@@ -8,7 +8,10 @@
 import UIKit
 
 class BankTableViewCell: UITableViewCell {
-
+    var viewModel: BanksTableCellViewModel?
+    
+    @IBOutlet weak var contentedView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +21,10 @@ class BankTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell() {
+        contentedView.setRadius(10.0)
     }
     
 }

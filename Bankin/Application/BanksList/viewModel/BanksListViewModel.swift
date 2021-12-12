@@ -54,4 +54,25 @@ class BanksListViewModel {
     func getBankCountryTitle(_ index: Int) -> String? {
         return banksListResources[index].country_code
     }
+    
+    func getParentBanksCount(_ section: Int) -> Int {
+        guard let banksListResourcesParents = banksListResources[section].parent_banks, let parentsBank = (banksListResourcesParents.allObjects as? [ParentBanksData]) else {
+            return 0
+        }
+        return parentsBank.count
+    }
+    
+    func getBankIcon(_ section: Int, _ index: Int) -> String? {
+        guard let banksListResourcesParents = banksListResources[section].parent_banks, let parentsBank = (banksListResourcesParents.allObjects as? [ParentBanksData]) else {
+            return nil
+        }
+        return parentsBank[index].logo_url
+    }
+    
+    func getBankTitle(_ section: Int, _ index: Int) -> String? {
+        guard let banksListResourcesParents = banksListResources[section].parent_banks, let parentsBank = (banksListResourcesParents.allObjects as? [ParentBanksData]) else {
+            return nil
+        }
+        return parentsBank[index].name
+    }
 }
