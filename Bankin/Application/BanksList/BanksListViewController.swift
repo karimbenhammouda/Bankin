@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class BanksListViewController: UIViewController {
     var viewModel: BanksListViewModel?
