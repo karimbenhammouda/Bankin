@@ -8,9 +8,19 @@
 import Foundation
 
 class BanksListViewModel {
-    let webServiceClient: WebServiceClient
+    private let webServiceClient: WebServiceClient
+    var banksList: BanksList?
 
     init(webServiceClient: WebServiceClient) {
         self.webServiceClient = webServiceClient
+        getData()
+    }
+    
+    func getData() {
+        webServiceClient.getBanksList() { (banksList)  in
+            DispatchQueue.main.async {
+                print(banksList)
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@ final class AppCoordinator: Coordinator {
 
     private var window: UIWindow?
     private var banksListCoordinator: BanksListCoordinator!
-    private var webServiceClient = WebServiceClient()
+    private var webServiceClient = WebServiceClient(keychen: KeychainManager())
 
     init(window: UIWindow) {
         self.window = window

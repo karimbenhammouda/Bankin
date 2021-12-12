@@ -40,6 +40,11 @@
 		3F052ED727624ABA004730D8 /* BanksListResourcesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052ED627624ABA004730D8 /* BanksListResourcesTest.swift */; };
 		3F052ED927624BE2004730D8 /* BanksListPaginationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052ED827624BE2004730D8 /* BanksListPaginationTest.swift */; };
 		3F052EDB27624CB2004730D8 /* BanksListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EDA27624CB2004730D8 /* BanksListTest.swift */; };
+		3F052EDD27624FAF004730D8 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EDC27624FAF004730D8 /* KeychainManager.swift */; };
+		3F052EDF27625868004730D8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EDE27625868004730D8 /* WebService.swift */; };
+		3F052EE127625892004730D8 /* APILog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EE027625892004730D8 /* APILog.swift */; };
+		3F052EE32762605A004730D8 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EE22762605A004730D8 /* APIRoute.swift */; };
+		3F052EE62762A8AA004730D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F052EE52762A8AA004730D8 /* Constants.swift */; };
 		59043A537F9B9D9C73A96E67 /* Pods_BankinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88BF89E0F0C2B0372B69F71 /* Pods_BankinTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +102,11 @@
 		3F052ED627624ABA004730D8 /* BanksListResourcesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListResourcesTest.swift; sourceTree = "<group>"; };
 		3F052ED827624BE2004730D8 /* BanksListPaginationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListPaginationTest.swift; sourceTree = "<group>"; };
 		3F052EDA27624CB2004730D8 /* BanksListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListTest.swift; sourceTree = "<group>"; };
+		3F052EDC27624FAF004730D8 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		3F052EDE27625868004730D8 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		3F052EE027625892004730D8 /* APILog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILog.swift; sourceTree = "<group>"; };
+		3F052EE22762605A004730D8 /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
+		3F052EE52762A8AA004730D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		54EAD254B6B1C2EF7B65BDAA /* Pods-Bankin-BankinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.release.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		79516A5BE73762F633A4BF89 /* Pods-Bankin-BankinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin-BankinUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bankin-BankinUITests/Pods-Bankin-BankinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		842F452528B783BFEAA88560 /* Pods-Bankin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin.release.xcconfig"; path = "Target Support Files/Pods-Bankin/Pods-Bankin.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +190,7 @@
 				3F052EA5276205DD004730D8 /* Application */,
 				3F052EB92762215A004730D8 /* Extensions */,
 				3F052EBC27622210004730D8 /* Protocols */,
+				3F052EE42762A84B004730D8 /* Constants */,
 				3F052EA72762060A004730D8 /* Resources */,
 				3F052E7B2761646B004730D8 /* Bankin.xcdatamodeld */,
 			);
@@ -215,7 +226,11 @@
 		3F052EA6276205FB004730D8 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				3F052EDC27624FAF004730D8 /* KeychainManager.swift */,
 				3F052EAC27621DEE004730D8 /* WebServiceClient.swift */,
+				3F052EDE27625868004730D8 /* WebService.swift */,
+				3F052EE027625892004730D8 /* APILog.swift */,
+				3F052EE22762605A004730D8 /* APIRoute.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -317,6 +332,14 @@
 				3F052ED2276243FB004730D8 /* BanksFormTest.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3F052EE42762A84B004730D8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3F052EE52762A8AA004730D8 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		DB2C9FC3FED1655943E495CE /* Frameworks */ = {
@@ -577,16 +600,21 @@
 				3F052EB027621EC9004730D8 /* Coordinator.swift in Sources */,
 				3F052EAD27621DEE004730D8 /* WebServiceClient.swift in Sources */,
 				3F052EC227622CB9004730D8 /* StringProtocol+Utils.swift in Sources */,
+				3F052EDF27625868004730D8 /* WebService.swift in Sources */,
 				3F052EC627623499004730D8 /* BanksListPagination.swift in Sources */,
 				3F052ECC2762369E004730D8 /* Banks.swift in Sources */,
+				3F052EE32762605A004730D8 /* APIRoute.swift in Sources */,
 				3F052EBE27622234004730D8 /* StoryboardInitializable.swift in Sources */,
+				3F052EE127625892004730D8 /* APILog.swift in Sources */,
 				3F052EC82762359D004730D8 /* BanksListResources.swift in Sources */,
+				3F052EDD27624FAF004730D8 /* KeychainManager.swift in Sources */,
 				3F052EB527621F91004730D8 /* BanksListCoordinator.swift in Sources */,
 				3F052E7D2761646B004730D8 /* Bankin.xcdatamodeld in Sources */,
 				3F052E752761646B004730D8 /* SceneDelegate.swift in Sources */,
 				3F052EB227621F00004730D8 /* AppCoordinator.swift in Sources */,
 				3F052EBB2762218B004730D8 /* UIStoryboard+Utils.swift in Sources */,
 				3F052EB8276220EC004730D8 /* BanksListViewModel.swift in Sources */,
+				3F052EE62762A8AA004730D8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
